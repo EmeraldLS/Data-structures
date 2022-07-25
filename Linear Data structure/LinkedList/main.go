@@ -12,19 +12,38 @@ type linkedList struct {
 	length int
 }
 
-func (l *linkedList) addNode(value int) {
-	newNode := node{
+func (l *linkedList) AddNode(value int) {
+	newNode := &node{
 		value: value,
 		next:  nil,
 	}
 	if l.head == nil {
-
+		l.head = newNode
+		l.length++
 	} else {
-
+		l.head = newNode
+		newNode.next = l.head
+		l.length++
 	}
-	fmt.Println(newNode)
+}
+
+func (l linkedList) Printlist() {
+	if l.head == nil {
+		return
+	} else {
+		currentNode := l.head
+		for currentNode != nil {
+			fmt.Println(currentNode.value)
+			currentNode = currentNode.next
+		}
+	}
+
 }
 
 func main() {
-
+	list := linkedList{}
+	list.AddNode(5)
+	list.AddNode(6)
+	list.AddNode(8)
+	list.Printlist()
 }
