@@ -1,6 +1,8 @@
-Welcome to a series about Data strcutures
-- 
-# BreakDown about this series
+Welcome to a new series about data strcutures
+-
+
+
+# BreakDown about for series
 1. Data structure explanation
 2. Linear Data structure
     * linkedList
