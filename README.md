@@ -1,7 +1,7 @@
 Welcome to a new series about data strcutures
 -
 
-* Also note that the series would be update from time to time
+* Also note that the series would be updated from time to time
 
 # BreakDown about for series
 1. Data structure explanation
