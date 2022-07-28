@@ -33,7 +33,8 @@ func main() {
 	for !stack.isEmpty() {
 		x, y := stack.Pop()
 		if y {
-			fmt.Println(x)
+			fmt.Println(x) //Removes all element from the stack
 		}
 	}
+	fmt.Println(stack) //Print out the empty stack
 }
